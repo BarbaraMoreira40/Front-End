@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.logo {
+    width: 150px; /* ajuste o tamanho conforme necessário */
+    height: auto; /* mantém a proporção do logotipo */
+    display: block; /* garante que o elemento se comporte como um bloco */
+    margin: 0 auto; /* centraliza o logo horizontalmente */
+    cursor: pointer; /* indica que é clicável, se necessário */
+}
+
+/* Para um vídeo de fundo */
+.video-fundo {
+    width: 100%; /* ocupa 100% da largura disponível */
+    height: auto; /* mantém a proporção */
+    display: block;
+}
+
+/* Para uma imagem de fundo */
+.imagem-fundo {
+    width: 100%; /* ocupa 100% da largura disponível */
+    height: auto; /* mantém a proporção */
+    object-fit: cover; /* cobre toda a área sem distorcer a imagem */
+}
+
+.container {
+    display: flex; /* ativa o flexbox para layout */
+    flex-direction: column; /* organiza os itens em uma coluna */
+    align-items: center; /* centraliza os itens no eixo horizontal */
+    justify-content: center; /* centraliza os itens no eixo vertical */
+    width: 100%; /* ocupa toda a largura disponível */
+    max-width: 1200px; /* define uma largura máxima */
+    margin: 0 auto; /* centraliza o contêiner */
+    padding: 0 20px; /* espaçamento interno */
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 100px; /* ajusta o tamanho do logo para telas menores */
+    }
+    /* outros ajustes de estilo para dispositivos móveis */
+}
+
+
